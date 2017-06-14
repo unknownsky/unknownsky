@@ -39,13 +39,6 @@
           s.parentNode.insertBefore(vds, s);
         })();
       })();
-    console.log(111);
-    window.addEventListener('message',function(e){
-                if(e.source!=window.parent) return;
-                var color=container.style.backgroundColor;
-                console.log(e);
-                window.parent.postMessage(color,'*');
-            },false);
   </script>
   <style type="text/css">.fancybox-margin{margin-right:8px;}</style>
 
